@@ -1,0 +1,20 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node / Next.js
+dashboard/node_modules/
+dashboard/.next/
+
+# Environment
+.env
+.env.local
+dashboard/.env.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log
