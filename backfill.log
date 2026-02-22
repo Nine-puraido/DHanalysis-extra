@@ -1,0 +1,712 @@
+═══ DHextra Historical Backfill ═══
+Range:   2025-08-01 → 2026-02-22
+Odds:    fetch
+Stats:   fetch
+Lineups: fetch
+
+▶ Starting backfill...
+
+  POL [1/180] Cracovia vs Lechia
+  POL [2/180] Radomiak vs Raków
+  POL [3/180] Legia vs Arka Gdynia
+  POL [4/180] Korona vs Radomiak
+  POL [5/180] Górnik vs Bruk-Bet Termalica
+  POL [6/180] Arka Gdynia vs Pogoń
+  POL [7/180] Widzew Łódź vs Wisła Płock
+2026-02-22 18:34:35 [WARNING] dhx.ingestion.backfill:   No odds for event 13981778: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981778/odds/1/all
+  POL [8/180] Piast vs Lech
+  POL [9/180] Jagiellonia vs Cracovia
+  POL [10/180] Legia vs ?
+  POL [11/180] Lechia vs Motor
+  POL [12/180] Zagłębie L. vs Lechia
+  POL [13/180] Cracovia vs Widzew Łódź
+  POL [14/180] Motor vs Piast
+  POL [15/180] ? vs Arka Gdynia
+  POL [16/180] Lech vs Korona
+  POL [17/180] Pogoń vs Górnik
+  POL [18/180] Radomiak vs Jagiellonia
+  POL [19/180] Bruk-Bet Termalica vs Raków
+  POL [20/180] Wisła Płock vs Legia
+  POL [21/180] Radomiak vs Bruk-Bet Termalica
+  POL [22/180] Widzew Łódź vs Pogoń
+  POL [23/180] Korona vs Motor
+2026-02-22 18:34:50 [WARNING] dhx.ingestion.backfill:   No odds for event 13981794: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981794/odds/1/all
+  POL [24/180] Raków vs Lech
+  POL [25/180] Górnik vs ?
+  POL [26/180] Piast vs Cracovia
+  POL [27/180] Lechia vs Arka Gdynia
+2026-02-22 18:34:57 [WARNING] dhx.ingestion.backfill:   No odds for event 13981790: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981790/odds/1/all
+  POL [28/180] Legia vs Jagiellonia
+  POL [29/180] Wisła Płock vs Zagłębie L.
+  POL [30/180] Arka Gdynia vs Wisła Płock
+  POL [31/180] ? vs Radomiak
+  POL [32/180] Bruk-Bet Termalica vs Korona
+  POL [33/180] Zagłębie L. vs Piast
+  POL [34/180] Górnik vs Motor
+  POL [35/180] Jagiellonia vs Lechia
+  POL [36/180] Lech vs Widzew Łódź
+  POL [37/180] Pogoń vs Raków
+  POL [38/180] Cracovia vs Legia
+  POL [39/180] Lechia vs ?
+  POL [40/180] Lech vs Zagłębie L.
+  POL [41/180] Korona vs Pogoń
+  POL [42/180] Wisła Płock vs Cracovia
+2026-02-22 18:35:16 [WARNING] dhx.ingestion.backfill:   No odds for event 13981812: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981812/odds/1/all
+  POL [43/180] Raków vs Górnik
+  POL [44/180] Piast vs Jagiellonia
+  POL [45/180] Motor vs Bruk-Bet Termalica
+  POL [46/180] Legia vs Radomiak
+  POL [47/180] Widzew Łódź vs Arka Gdynia
+  POL [48/180] Raków vs Górnik
+2026-02-22 18:35:24 [WARNING] dhx.ingestion.backfill:   No odds for event 13981851: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981851/odds/1/all
+  POL [49/180] Piast vs Lechia
+  POL [50/180] ? vs Cracovia
+  POL [51/180] Wisła Płock vs Jagiellonia
+  POL [52/180] Radomiak vs Piast
+  POL [53/180] Arka Gdynia vs Korona
+  POL [54/180] Bruk-Bet Termalica vs Lech
+  POL [55/180] Raków vs Legia
+  POL [56/180] Zagłębie L. vs Motor
+  POL [57/180] Pogoń vs Lechia
+  POL [58/180] Górnik vs Widzew Łódź
+  POL [59/180] Raków vs Lech
+  POL [60/180] Legia vs Jagiellonia
+  POL [61/180] Wisła Płock vs ?
+  POL [62/180] Korona vs Lechia
+  POL [63/180] Piast vs Bruk-Bet Termalica
+  POL [64/180] Cracovia vs Górnik
+  POL [65/180] Widzew Łódź vs Raków
+  POL [66/180] Lech vs Jagiellonia
+  POL [67/180] Legia vs Pogoń
+  POL [68/180] Zagłębie L. vs Arka Gdynia
+  POL [69/180] Motor vs Radomiak
+  POL [70/180] Lechia vs Wisła Płock
+  POL [71/180] Pogoń vs Piast
+  POL [72/180] Bruk-Bet Termalica vs Widzew Łódź
+  POL [73/180] Radomiak vs Zagłębie L.
+  POL [74/180] Arka Gdynia vs Cracovia
+  POL [75/180] Jagiellonia vs Korona
+  POL [76/180] Raków vs Motor
+  POL [77/180] ? vs Lech
+  POL [78/180] Górnik vs Legia
+  POL [79/180] Motor vs ?
+  POL [80/180] Widzew Łódź vs Radomiak
+  POL [81/180] Korona vs Górnik
+  POL [82/180] Jagiellonia vs Arka Gdynia
+  POL [83/180] Cracovia vs Raków
+  POL [84/180] Piast vs Lechia
+  POL [85/180] Lech vs Pogoń
+  POL [86/180] Zagłębie L. vs Legia
+  POL [87/180] Wisła Płock vs Bruk-Bet Termalica
+  POL [88/180] Bruk-Bet Termalica vs Zagłębie L.
+  POL [89/180] Motor vs Widzew Łódź
+2026-02-22 18:35:53 [WARNING] dhx.ingestion.backfill:   No odds for event 13981859: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13981859/odds/1/all
+  POL [90/180] Radomiak vs Wisła Płock
+  POL [91/180] Arka Gdynia vs Piast
+  POL [92/180] Pogoń vs Cracovia
+  POL [93/180] ? vs Korona
+  POL [94/180] Raków vs Lechia
+  POL [95/180] Górnik vs Jagiellonia
+  POL [96/180] Legia vs Lech
+  POL [97/180] Radomiak vs Wisła Płock
+  POL [98/180] Bruk-Bet Termalica vs ?
+  POL [99/180] Piast vs Korona
+  POL [100/180] Górnik vs Arka Gdynia
+  POL [101/180] Lech vs Motor
+  POL [102/180] Jagiellonia vs Raków
+  POL [103/180] Widzew Łódź vs Legia
+  POL [104/180] Lechia vs Radomiak
+  POL [105/180] Wisła Płock vs Pogoń
+  POL [106/180] Cracovia vs Zagłębie L.
+  POL [107/180] Radomiak vs Cracovia
+  POL [108/180] Zagłębie L. vs Górnik
+  POL [109/180] Lechia vs Widzew Łódź
+  POL [110/180] Motor vs Wisła Płock
+  POL [111/180] ? vs Piast
+  POL [112/180] Korona vs Raków
+  POL [113/180] Legia vs Bruk-Bet Termalica
+  POL [114/180] Pogoń vs Jagiellonia
+  POL [115/180] Arka Gdynia vs Lech
+  POL [116/180] Bruk-Bet Termalica vs Arka Gdynia
+  POL [117/180] Górnik vs Wisła Płock
+  POL [118/180] Cracovia vs Motor
+  POL [119/180] Raków vs Piast
+  POL [120/180] Legia vs Lechia
+  POL [121/180] Lech vs Radomiak
+  POL [122/180] Widzew Łódź vs Korona
+  POL [123/180] Pogoń vs Zagłębie L.
+  POL [124/180] Piast vs Widzew Łódź
+  POL [125/180] Radomiak vs Górnik
+  POL [126/180] Lechia vs Bruk-Bet Termalica
+  POL [127/180] Korona vs Cracovia
+  POL [128/180] ? vs Pogoń
+  POL [129/180] Arka Gdynia vs Raków
+  POL [130/180] Zagłębie L. vs Jagiellonia
+  POL [131/180] Wisła Płock vs Lech
+  POL [132/180] Motor vs Legia
+  POL [133/180] Wisła Płock vs Cracovia
+  POL [134/180] Lechia vs Górnik
+  POL [135/180] Arka Gdynia vs Motor
+  POL [136/180] Pogoń vs Radomiak
+  POL [137/180] Zagłębie L. vs Widzew Łódź
+  POL [138/180] Piast vs Legia
+  POL [139/180] Bruk-Bet Termalica vs Jagiellonia
+  POL [140/180] Cracovia vs Lech
+  POL [141/180] Raków vs ?
+  POL [142/180] Korona vs Wisła Płock
+  POL [143/180] Raków vs Zagłębie L.
+  POL [144/180] Motor vs Jagiellonia
+  POL [145/180] Legia vs Piast
+  POL [146/180] Zagłębie L. vs ?
+  POL [147/180] Radomiak vs Arka Gdynia
+  POL [148/180] Górnik vs Piast
+  POL [149/180] Widzew Łódź vs Jagiellonia
+  POL [150/180] Lech vs Lechia
+  POL [151/180] Motor vs Pogoń
+  POL [152/180] Wisła Płock vs Raków
+  POL [153/180] Legia vs Korona
+  POL [154/180] Bruk-Bet Termalica vs Cracovia
+  POL [155/180] Piast vs Lech
+2026-02-22 18:36:46 [WARNING] dhx.ingestion.backfill:   No odds for event 15270450: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/15270450/odds/1/all
+  POL [156/180] Jagiellonia vs ?
+  POL [157/180] Korona vs Zagłębie L.
+  POL [158/180] Lechia vs Cracovia
+  POL [159/180] Arka Gdynia vs Legia
+  POL [160/180] Jagiellonia vs Motor
+  POL [161/180] Górnik vs Lech
+  POL [162/180] Pogoń vs Bruk-Bet Termalica
+  POL [163/180] Raków vs Radomiak
+  POL [164/180] ? vs Widzew Łódź
+  POL [165/180] Piast vs Wisła Płock
+  POL [166/180] Radomiak vs Korona
+  POL [167/180] ? vs Legia
+  POL [168/180] Cracovia vs Jagiellonia
+  POL [169/180] Zagłębie L. vs Raków
+  POL [170/180] Wisła Płock vs Widzew Łódź
+  POL [171/180] Motor vs Lechia
+  POL [172/180] Pogoń vs Arka Gdynia
+  POL [173/180] Lech vs Piast
+  POL [174/180] Bruk-Bet Termalica vs Górnik
+  POL [175/180] Piast vs Motor
+  POL [176/180] Widzew Łódź vs Cracovia
+  POL [177/180] Raków vs Bruk-Bet Termalica
+  POL [178/180] Górnik vs Pogoń
+  POL [179/180] Legia vs Wisła Płock
+  POL [180/180] Arka Gdynia vs ?
+  GSL [1/150] Aris vs Volos
+  GSL [2/150] Olympiacos vs Asteras
+  GSL [3/150] Panetolikos vs Atromitos
+  GSL [4/150] Panathinaikos vs OFI
+  GSL [5/150] AEK vs Panserraikos
+  GSL [6/150] PAOK vs AEL
+  GSL [7/150] Levadiakos vs Kifisia
+  GSL [8/150] Volos vs Olympiacos
+  GSL [9/150] Panserraikos vs OFI
+  GSL [10/150] Aris vs Panetolikos
+  GSL [11/150] AEL vs Kifisia
+  GSL [12/150] AEK vs Asteras
+  GSL [13/150] PAOK vs Atromitos
+  GSL [14/150] Panathinaikos vs Levadiakos
+  GSL [15/150] Olympiacos vs Panserraikos
+  GSL [16/150] Panetolikos vs Volos
+  GSL [17/150] Atromitos vs Aris
+  GSL [18/150] Asteras vs AEL
+  GSL [19/150] Kifisia vs Panathinaikos
+  GSL [20/150] Levadiakos vs AEK
+  GSL [21/150] OFI vs PAOK
+  GSL [22/150] Panserraikos vs Atromitos
+  GSL [23/150] Kifisia vs Aris
+  GSL [24/150] Volos vs Asteras
+  GSL [25/150] PAOK vs Panetolikos
+2026-02-22 18:37:27 [WARNING] dhx.ingestion.backfill:   No odds for event 14151966: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/14151966/odds/1/all
+  GSL [26/150] AEL vs AEK
+  GSL [27/150] Levadiakos vs OFI
+  GSL [28/150] Panathinaikos vs Olympiacos
+  GSL [29/150] Olympiacos vs Levadiakos
+  GSL [30/150] Aris vs Panserraikos
+  GSL [31/150] AEK vs Volos
+  GSL [32/150] OFI vs Kifisia
+  GSL [33/150] Asteras vs PAOK
+  GSL [34/150] Panetolikos vs Panathinaikos
+  GSL [35/150] Atromitos vs AEL
+  GSL [36/150] Panserraikos vs Asteras
+  GSL [37/150] OFI vs Aris
+  GSL [38/150] AEL vs Volos
+  GSL [39/150] Levadiakos vs Panetolikos
+  GSL [40/150] Kifisia vs AEK
+  GSL [41/150] PAOK vs Olympiacos
+  GSL [42/150] Panathinaikos vs Atromitos
+  GSL [43/150] AEL vs Olympiacos
+  GSL [44/150] Atromitos vs Levadiakos
+  GSL [45/150] Panetolikos vs OFI
+  GSL [46/150] Asteras vs Kifisia
+  GSL [47/150] Volos vs Panserraikos
+  GSL [48/150] Aris vs Panathinaikos
+  GSL [49/150] AEK vs PAOK
+  GSL [50/150] Kifisia vs Panetolikos
+  GSL [51/150] Panserraikos vs AEL
+  GSL [52/150] OFI vs Atromitos
+  GSL [53/150] Levadiakos vs Aris
+  GSL [54/150] Panathinaikos vs Asteras
+  GSL [55/150] PAOK vs Volos
+  GSL [56/150] Olympiacos vs AEK
+  GSL [57/150] Volos vs Panathinaikos
+  GSL [58/150] Atromitos vs Kifisia
+  GSL [59/150] Olympiacos vs Aris
+  GSL [60/150] AEL vs Levadiakos
+  GSL [61/150] Panserraikos vs PAOK
+  GSL [62/150] AEK vs Panetolikos
+  GSL [63/150] Asteras vs OFI
+  GSL [64/150] Panetolikos vs AEL
+  GSL [65/150] Aris vs Asteras
+  GSL [66/150] Kifisia vs Olympiacos
+  GSL [67/150] Levadiakos vs Panserraikos
+  GSL [68/150] OFI vs AEK
+  GSL [69/150] Atromitos vs Volos
+  GSL [70/150] Panathinaikos vs PAOK
+  GSL [71/150] Asteras vs Panetolikos
+  GSL [72/150] Olympiacos vs Atromitos
+  GSL [73/150] Panserraikos vs Panathinaikos
+  GSL [74/150] PAOK vs Kifisia
+  GSL [75/150] AEK vs Aris
+  GSL [76/150] Volos vs Levadiakos
+  GSL [77/150] AEL vs OFI
+  GSL [78/150] OFI vs Volos
+  GSL [79/150] Kifisia vs Panserraikos
+  GSL [80/150] Aris vs AEL
+  GSL [81/150] Atromitos vs Asteras
+  GSL [82/150] Panetolikos vs Olympiacos
+  GSL [83/150] Levadiakos vs PAOK
+  GSL [84/150] Panathinaikos vs AEK
+  GSL [85/150] Olympiacos vs OFI
+  GSL [86/150] Volos vs Kifisia
+  GSL [87/150] Asteras vs Levadiakos
+  GSL [88/150] AEL vs Panathinaikos
+  GSL [89/150] PAOK vs Aris
+  GSL [90/150] AEK vs Atromitos
+  GSL [91/150] Panserraikos vs Panetolikos
+  GSL [92/150] Levadiakos vs AEL
+  GSL [93/150] OFI vs Panserraikos
+  GSL [94/150] Kifisia vs Asteras
+  GSL [95/150] Panetolikos vs AEK
+  GSL [96/150] Atromitos vs PAOK
+  GSL [97/150] Aris vs Olympiacos
+  GSL [98/150] Panathinaikos vs Volos
+  GSL [99/150] Asteras vs Aris
+  GSL [100/150] Volos vs Panetolikos
+  GSL [101/150] Olympiacos vs Kifisia
+  GSL [102/150] AEL vs Atromitos
+  GSL [103/150] PAOK vs Panathinaikos
+  GSL [104/150] AEK vs OFI
+  GSL [105/150] Panserraikos vs Levadiakos
+2026-02-22 18:38:26 [WARNING] dhx.ingestion.backfill:   No odds for event 14159109: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/14159109/odds/1/all
+  GSL [106/150] Kifisia vs AEL
+  GSL [107/150] Panetolikos vs PAOK
+  GSL [108/150] Atromitos vs Olympiacos
+  GSL [109/150] Levadiakos vs Volos
+  GSL [110/150] OFI vs Asteras
+  GSL [111/150] Aris vs AEK
+  GSL [112/150] Panathinaikos vs Panserraikos
+  GSL [113/150] Panserraikos vs Kifisia
+  GSL [114/150] Asteras vs Olympiacos
+  GSL [115/150] AEL vs Aris
+  GSL [116/150] PAOK vs OFI
+  GSL [117/150] AEK vs Panathinaikos
+  GSL [118/150] Panetolikos vs Levadiakos
+  GSL [119/150] Volos vs Atromitos
+  GSL [120/150] Olympiacos vs Volos
+  GSL [121/150] Asteras vs AEK
+  GSL [122/150] AEL vs Panserraikos
+  GSL [123/150] Aris vs Levadiakos
+  GSL [124/150] OFI vs Panetolikos
+  GSL [125/150] Atromitos vs Panathinaikos
+  GSL [126/150] Kifisia vs PAOK
+  GSL [127/150] Panetolikos vs Aris
+  GSL [128/150] Atromitos vs OFI
+  GSL [129/150] Volos vs AEL
+  GSL [130/150] Levadiakos vs Asteras
+  GSL [131/150] Panathinaikos vs Kifisia
+  GSL [132/150] PAOK vs Panserraikos
+  GSL [133/150] AEK vs Olympiacos
+  GSL [134/150] Asteras vs Olympiacos
+  GSL [135/150] AEL vs Panetolikos
+  GSL [136/150] Asteras vs Volos
+  GSL [137/150] Kifisia vs Atromitos
+  GSL [138/150] Panserraikos vs AEK
+  GSL [139/150] OFI vs Levadiakos
+  GSL [140/150] Aris vs PAOK
+  GSL [141/150] Olympiacos vs Panathinaikos
+  GSL [142/150] Panetolikos vs Asteras
+  GSL [143/150] Levadiakos vs Olympiacos
+  GSL [144/150] Volos vs Aris
+  GSL [145/150] Kifisia vs OFI
+  GSL [146/150] PAOK vs AEK
+  GSL [147/150] Panathinaikos vs AEL
+  GSL [148/150] Atromitos vs Panserraikos
+  GSL [149/150] Asteras vs Atromitos
+  GSL [150/150] Olympiacos vs Panetolikos
+  CFL [1/150] Dukla Praha vs Viktoria Plzeň
+  CFL [2/150] Jablonec vs Slavia Praha
+  CFL [3/150] Karviná vs Bohemians
+  CFL [4/150] Pardubice vs Baník
+  CFL [5/150] Slovan Liberec vs Sparta Praha
+  CFL [6/150] Mladá Boleslav vs Viktoria Plzeň
+  CFL [7/150] Teplice vs Jablonec
+  CFL [8/150] Zlín vs Slovan Liberec
+  CFL [9/150] Viktoria Plzeň vs Karviná
+  CFL [10/150] Slavia Praha vs Pardubice
+  CFL [11/150] Hradec Králové vs Sigma Olomouc
+  CFL [12/150] Bohemians vs Mladá Boleslav
+  CFL [13/150] Baník vs Slovácko
+  CFL [14/150] Sparta Praha vs Dukla Praha
+  CFL [15/150] Karviná vs Teplice
+  CFL [16/150] Dukla Praha vs Hradec Králové
+  CFL [17/150] Pardubice vs Bohemians
+  CFL [18/150] Slovácko vs Jablonec
+  CFL [19/150] Mladá Boleslav vs Slavia Praha
+  CFL [20/150] Slovan Liberec vs Viktoria Plzeň
+  CFL [21/150] Sigma Olomouc vs Baník
+  CFL [22/150] Sparta Praha vs Zlín
+  CFL [23/150] Teplice vs Mladá Boleslav
+  CFL [24/150] Zlín vs Dukla Praha
+  CFL [25/150] Baník vs Slovan Liberec
+  CFL [26/150] Viktoria Plzeň vs Sigma Olomouc
+  CFL [27/150] Slavia Praha vs Karviná
+  CFL [28/150] Jablonec vs Pardubice
+  CFL [29/150] Bohemians vs Slovácko
+  CFL [30/150] Hradec Králové vs Sparta Praha
+  CFL [31/150] Baník vs Teplice
+  CFL [32/150] Pardubice vs Slovácko
+  CFL [33/150] Zlín vs Hradec Králové
+  CFL [34/150] Karviná vs Jablonec
+  CFL [35/150] Sigma Olomouc vs Teplice
+  CFL [36/150] Sparta Praha vs Viktoria Plzeň
+  CFL [37/150] Dukla Praha vs Bohemians
+  CFL [38/150] Slovan Liberec vs Slavia Praha
+  CFL [39/150] Mladá Boleslav vs Baník
+  CFL [40/150] Slavia Praha vs Dukla Praha
+  CFL [41/150] Slovácko vs Karviná
+  CFL [42/150] Bohemians vs Sigma Olomouc
+  CFL [43/150] Baník vs Sparta Praha
+  CFL [44/150] Hradec Králové vs Slovan Liberec
+  CFL [45/150] Teplice vs Pardubice
+  CFL [46/150] Jablonec vs Mladá Boleslav
+  CFL [47/150] Viktoria Plzeň vs Zlín
+  CFL [48/150] Pardubice vs Baník
+  CFL [49/150] Pardubice vs Karviná
+  CFL [50/150] Dukla Praha vs Teplice
+  CFL [51/150] Mladá Boleslav vs Slovácko
+  CFL [52/150] Slovan Liberec vs Bohemians
+  CFL [53/150] Zlín vs Baník
+  CFL [54/150] Sigma Olomouc vs Jablonec
+  CFL [55/150] Viktoria Plzeň vs Hradec Králové
+  CFL [56/150] Sparta Praha vs Slavia Praha
+  CFL [57/150] Teplice vs Slovan Liberec
+  CFL [58/150] Pardubice vs Mladá Boleslav
+  CFL [59/150] Karviná vs Sigma Olomouc
+  CFL [60/150] Bohemians vs Viktoria Plzeň
+  CFL [61/150] Slavia Praha vs Zlín
+  CFL [62/150] Baník vs Hradec Králové
+  CFL [63/150] Slovácko vs Sparta Praha
+  CFL [64/150] Jablonec vs Dukla Praha
+  CFL [65/150] Bohemians vs Mladá Boleslav
+  CFL [66/150] Hradec Králové vs Teplice
+  CFL [67/150] Zlín vs Pardubice
+  CFL [68/150] Mladá Boleslav vs Karviná
+  CFL [69/150] Dukla Praha vs Slovácko
+  CFL [70/150] Slovan Liberec vs Jablonec
+  CFL [71/150] Sigma Olomouc vs Slavia Praha
+  CFL [72/150] Sparta Praha vs Bohemians
+  CFL [73/150] Viktoria Plzeň vs Baník
+  CFL [74/150] Sparta Praha vs Bohemians
+  CFL [75/150] Pardubice vs Dukla Praha
+  CFL [76/150] Slovácko vs Slovan Liberec
+  CFL [77/150] Jablonec vs Zlín
+  CFL [78/150] Slavia Praha vs Baník
+  CFL [79/150] Mladá Boleslav vs Sigma Olomouc
+  CFL [80/150] Bohemians vs Hradec Králové
+  CFL [81/150] Karviná vs Sparta Praha
+  CFL [82/150] Teplice vs Viktoria Plzeň
+  CFL [83/150] Hradec Králové vs Slovácko
+  CFL [84/150] Dukla Praha vs Mladá Boleslav
+  CFL [85/150] Zlín vs Bohemians
+  CFL [86/150] Baník vs Jablonec
+  CFL [87/150] Slovan Liberec vs Karviná
+  CFL [88/150] Sigma Olomouc vs Pardubice
+  CFL [89/150] Sparta Praha vs Teplice
+  CFL [90/150] Viktoria Plzeň vs Slavia Praha
+  CFL [91/150] Pardubice vs Slovan Liberec
+  CFL [92/150] Dukla Praha vs Sigma Olomouc
+  CFL [93/150] Teplice vs Baník
+  CFL [94/150] Mladá Boleslav vs Sparta Praha
+  CFL [95/150] Slavia Praha vs Bohemians
+  CFL [96/150] Karviná vs Hradec Králové
+  CFL [97/150] Jablonec vs Viktoria Plzeň
+  CFL [98/150] Slovácko vs Zlín
+  CFL [99/150] Zlín vs Karviná
+  CFL [100/150] Hradec Králové vs Jablonec
+  CFL [101/150] Baník vs Dukla Praha
+  CFL [102/150] Slavia Praha vs Slovácko
+  CFL [103/150] Bohemians vs Teplice
+  CFL [104/150] Slovan Liberec vs Sigma Olomouc
+  CFL [105/150] Viktoria Plzeň vs Mladá Boleslav
+  CFL [106/150] Sparta Praha vs Pardubice
+  CFL [107/150] Teplice vs Slavia Praha
+  CFL [108/150] Dukla Praha vs Slovan Liberec
+  CFL [109/150] Mladá Boleslav vs Zlín
+  CFL [110/150] Slovácko vs Viktoria Plzeň
+  CFL [111/150] Sigma Olomouc vs Sparta Praha
+  CFL [112/150] Jablonec vs Bohemians
+  CFL [113/150] Karviná vs Baník
+  CFL [114/150] Pardubice vs Hradec Králové
+  CFL [115/150] Hradec Králové vs Mladá Boleslav
+  CFL [116/150] Teplice vs Slovácko
+  CFL [117/150] Baník vs Pardubice
+  CFL [118/150] Slavia Praha vs Jablonec
+  CFL [119/150] Bohemians vs Karviná
+  CFL [120/150] Viktoria Plzeň vs Dukla Praha
+  CFL [121/150] Zlín vs Sigma Olomouc
+  CFL [122/150] Sparta Praha vs Slovan Liberec
+  CFL [123/150] Mladá Boleslav vs Bohemians
+  CFL [124/150] Sigma Olomouc vs Hradec Králové
+  CFL [125/150] Jablonec vs Teplice
+  CFL [126/150] Dukla Praha vs Sparta Praha
+  CFL [127/150] Slovácko vs Baník
+  CFL [128/150] Slovan Liberec vs Zlín
+  CFL [129/150] Karviná vs Viktoria Plzeň
+  CFL [130/150] Pardubice vs Slavia Praha
+  CFL [131/150] Teplice vs Karviná
+  CFL [132/150] Jablonec vs Slovácko
+  CFL [133/150] Baník vs Sigma Olomouc
+  CFL [134/150] Slavia Praha vs Mladá Boleslav
+  CFL [135/150] Hradec Králové vs Dukla Praha
+  CFL [136/150] Bohemians vs Pardubice
+  CFL [137/150] Zlín vs Sparta Praha
+  CFL [138/150] Viktoria Plzeň vs Slovan Liberec
+  CFL [139/150] Slovácko vs Bohemians
+  CFL [140/150] Dukla Praha vs Zlín
+  CFL [141/150] Karviná vs Slavia Praha
+  CFL [142/150] Sigma Olomouc vs Viktoria Plzeň
+  CFL [143/150] Pardubice vs Jablonec
+  CFL [144/150] Mladá Boleslav vs Teplice
+  CFL [145/150] Slovan Liberec vs Baník
+  CFL [146/150] Sparta Praha vs Hradec Králové
+  CFL [147/150] Hradec Králové vs Zlín
+  CFL [148/150] Slovácko vs Pardubice
+  CFL [149/150] Jablonec vs Karviná
+  CFL [150/150] Slavia Praha vs Slovan Liberec
+  DSL [1/90] Sønderjyske vs Brøndby
+  DSL [2/90] AGF vs Vejle
+  DSL [3/90] Nordsjælland vs Viborg
+  DSL [4/90] Vejle vs Viborg
+  DSL [5/90] AGF vs FC Fredericia
+  DSL [6/90] Silkeborg vs Sønderjyske
+  DSL [7/90] OB vs Nordsjælland
+  DSL [8/90] Randers vs København
+  DSL [9/90] Brøndby vs Midtjylland
+  DSL [10/90] Sønderjyske vs Randers
+  DSL [11/90] Brøndby vs København
+  DSL [12/90] Viborg vs AGF
+  DSL [13/90] Nordsjælland vs Midtjylland
+  DSL [14/90] Silkeborg vs OB
+  DSL [15/90] FC Fredericia vs Vejle
+  DSL [16/90] OB vs FC Fredericia
+  DSL [17/90] Midtjylland vs Viborg
+  DSL [18/90] Vejle vs Sønderjyske
+  DSL [19/90] København vs Silkeborg
+  DSL [20/90] AGF vs Brøndby
+  DSL [21/90] Randers vs Nordsjælland
+  DSL [22/90] Sønderjyske vs København
+  DSL [23/90] Viborg vs FC Fredericia
+  DSL [24/90] Silkeborg vs Vejle
+  DSL [25/90] Nordsjælland vs AGF
+  DSL [26/90] Brøndby vs OB
+  DSL [27/90] Midtjylland vs Randers
+  DSL [28/90] OB vs Sønderjyske
+  DSL [29/90] Randers vs Viborg
+  DSL [30/90] Vejle vs Nordsjælland
+  DSL [31/90] AGF vs Silkeborg
+  DSL [32/90] København vs Midtjylland
+  DSL [33/90] FC Fredericia vs Brøndby
+  DSL [34/90] Silkeborg vs København
+  DSL [35/90] Viborg vs OB
+  DSL [36/90] Nordsjælland vs Randers
+  DSL [37/90] Brøndby vs AGF
+  DSL [38/90] Midtjylland vs Vejle
+  DSL [39/90] Sønderjyske vs FC Fredericia
+  DSL [40/90] AGF vs Nordsjælland
+  DSL [41/90] Vejle vs Silkeborg
+  DSL [42/90] FC Fredericia vs Midtjylland
+  DSL [43/90] Randers vs Sønderjyske
+  DSL [44/90] København vs Viborg
+  DSL [45/90] OB vs Brøndby
+  DSL [46/90] København vs FC Fredericia
+  DSL [47/90] Viborg vs Randers
+  DSL [48/90] Sønderjyske vs Vejle
+  DSL [49/90] Nordsjælland vs OB
+  DSL [50/90] Silkeborg vs Brøndby
+  DSL [51/90] Midtjylland vs AGF
+  DSL [52/90] OB vs Silkeborg
+  DSL [53/90] FC Fredericia vs Viborg
+  DSL [54/90] Vejle vs København
+  DSL [55/90] Randers vs Midtjylland
+  DSL [56/90] AGF vs Sønderjyske
+  DSL [57/90] Brøndby vs Nordsjælland
+  DSL [58/90] Silkeborg vs AGF
+  DSL [59/90] København vs Brøndby
+  DSL [60/90] Viborg vs Vejle
+  DSL [61/90] Nordsjælland vs FC Fredericia
+  DSL [62/90] Sønderjyske vs Midtjylland
+  DSL [63/90] Randers vs OB
+  DSL [64/90] Sønderjyske vs Viborg
+  DSL [65/90] Silkeborg vs Randers
+  DSL [66/90] AGF vs København
+  DSL [67/90] Midtjylland vs Nordsjælland
+  DSL [68/90] OB vs Vejle
+  DSL [69/90] Brøndby vs FC Fredericia
+  DSL [70/90] FC Fredericia vs OB
+  DSL [71/90] Nordsjælland vs Silkeborg
+  DSL [72/90] Viborg vs Midtjylland
+  DSL [73/90] Randers vs AGF
+  DSL [74/90] København vs Sønderjyske
+  DSL [75/90] Vejle vs Brøndby
+  DSL [76/90] Silkeborg vs Viborg
+  DSL [77/90] Nordsjælland vs Sønderjyske
+2026-02-22 18:41:25 [WARNING] dhx.ingestion.backfill:   No odds for event 13984676: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/13984676/odds/1/all
+  DSL [78/90] Viborg vs Brøndby
+  DSL [79/90] Midtjylland vs København
+  DSL [80/90] Brøndby vs Randers
+  DSL [81/90] Vejle vs FC Fredericia
+  DSL [82/90] AGF vs OB
+  DSL [83/90] Randers vs Vejle
+  DSL [84/90] København vs Nordsjælland
+  DSL [85/90] FC Fredericia vs AGF
+  DSL [86/90] OB vs Midtjylland
+  DSL [87/90] Viborg vs Brøndby
+  DSL [88/90] Sønderjyske vs Silkeborg
+  DSL [89/90] Nordsjælland vs Vejle
+  DSL [90/90] OB vs København
+  RSL [1/180] Oțelul Galați vs Rapid București
+  RSL [2/180] Unirea Slobozia vs Metaloglobus
+  RSL [3/180] Dinamo București vs UTA
+  RSL [4/180] Petrolul Ploiești vs Hermannstadt
+  RSL [5/180] FK Csíkszereda vs U. Craiova
+  RSL [6/180] CFR Cluj vs FC Botoșani
+  RSL [7/180] Rapid București vs FCSB
+  RSL [8/180] Argeș Pitești vs Oțelul Galați
+  RSL [9/180] Farul Constanța vs U. Cluj
+  RSL [10/180] UTA vs Unirea Slobozia
+  RSL [11/180] Metaloglobus vs Rapid București
+  RSL [12/180] FC Botoșani vs FK Csíkszereda
+  RSL [13/180] U. Cluj vs Dinamo București
+  RSL [14/180] Oțelul Galați vs CFR Cluj
+  RSL [15/180] U. Craiova vs Petrolul Ploiești
+  RSL [16/180] FCSB vs Argeș Pitești
+  RSL [17/180] Hermannstadt vs Farul Constanța
+2026-02-22 18:41:57 [WARNING] dhx.ingestion.backfill:   No odds for event 14054727: 404 Client Error: Not Found for url: https://api.sofascore.com/api/v1/event/14054727/odds/1/all
+  RSL [18/180] Rapid București vs UTA
+  RSL [19/180] Unirea Slobozia vs U. Cluj
+  RSL [20/180] Dinamo București vs Hermannstadt
+  RSL [21/180] Argeș Pitești vs Metaloglobus
+  RSL [22/180] FC Botoșani vs U. Craiova
+  RSL [23/180] CFR Cluj vs FCSB
+  RSL [24/180] FK Csíkszereda vs Oțelul Galați
+  RSL [25/180] Farul Constanța vs Petrolul Ploiești
+  RSL [26/180] U. Cluj vs Rapid București
+  RSL [27/180] UTA vs Argeș Pitești
+  RSL [28/180] Metaloglobus vs CFR Cluj
+  RSL [29/180] Oțelul Galați vs FC Botoșani
+  RSL [30/180] U. Craiova vs Farul Constanța
+  RSL [31/180] Petrolul Ploiești vs Dinamo București
+  RSL [32/180] FC Botoșani vs FCSB
+  RSL [33/180] Argeș Pitești vs U. Cluj
+  RSL [34/180] Oțelul Galați vs U. Craiova
+  RSL [35/180] Unirea Slobozia vs Petrolul Ploiești
+  RSL [36/180] CFR Cluj vs UTA
+  RSL [37/180] Rapid București vs Hermannstadt
+  RSL [38/180] FK Csíkszereda vs Metaloglobus
+  RSL [39/180] Dinamo București vs Farul Constanța
+  RSL [40/180] Hermannstadt vs Argeș Pitești
+  RSL [41/180] U. Craiova vs Dinamo București
+  RSL [42/180] UTA vs FK Csíkszereda
+  RSL [43/180] Petrolul Ploiești vs Rapid București
+  RSL [44/180] Farul Constanța vs Unirea Slobozia
+  RSL [45/180] FCSB vs Oțelul Galați
+  RSL [46/180] Metaloglobus vs FC Botoșani
+  RSL [47/180] U. Cluj vs CFR Cluj
+  RSL [48/180] Unirea Slobozia vs Dinamo București
+  RSL [49/180] FK Csíkszereda vs U. Cluj
+  RSL [50/180] Argeș Pitești vs Petrolul Ploiești
+  RSL [51/180] Rapid București vs Farul Constanța
+  RSL [52/180] CFR Cluj vs Hermannstadt
+  RSL [53/180] FCSB vs U. Craiova
+  RSL [54/180] Oțelul Galați vs Metaloglobus
+  RSL [55/180] FC Botoșani vs UTA
+  RSL [56/180] FK Csíkszereda vs CFR Cluj
+  RSL [57/180] Farul Constanța vs Argeș Pitești
+  RSL [58/180] U. Cluj vs FC Botoșani
+  RSL [59/180] U. Craiova vs Unirea Slobozia
+  RSL [60/180] Metaloglobus vs FCSB
+  RSL [61/180] UTA vs Oțelul Galați
+  RSL [62/180] Dinamo București vs Rapid București
+  RSL [63/180] Hermannstadt vs FK Csíkszereda
+  RSL [64/180] Petrolul Ploiești vs CFR Cluj
+  RSL [65/180] FK Csíkszereda vs Petrolul Ploiești
+  RSL [66/180] Argeș Pitești vs Dinamo București
+  RSL [67/180] Oțelul Galați vs U. Cluj
+  RSL [68/180] CFR Cluj vs Farul Constanța
+  RSL [69/180] Metaloglobus vs U. Craiova
+  RSL [70/180] FCSB vs UTA
+  RSL [71/180] FC Botoșani vs Hermannstadt
+  RSL [72/180] Rapid București vs Unirea Slobozia
+  RSL [73/180] Dinamo București vs CFR Cluj
+  RSL [74/180] Unirea Slobozia vs Argeș Pitești
+  RSL [75/180] U. Cluj vs FCSB
+  RSL [76/180] UTA vs Metaloglobus
+  RSL [77/180] Hermannstadt vs Oțelul Galați
+  RSL [78/180] U. Craiova vs Rapid București
+  RSL [79/180] Farul Constanța vs FK Csíkszereda
+  RSL [80/180] Petrolul Ploiești vs FC Botoșani
+  RSL [81/180] U. Cluj vs Metaloglobus
+  RSL [82/180] Farul Constanța vs FC Botoșani
+  RSL [83/180] Petrolul Ploiești vs Oțelul Galați
+  RSL [84/180] Dinamo București vs FK Csíkszereda
+  RSL [85/180] Rapid București vs Argeș Pitești
+  RSL [86/180] Unirea Slobozia vs CFR Cluj
+  RSL [87/180] U. Craiova vs UTA
+  RSL [88/180] Hermannstadt vs FCSB
+  RSL [89/180] FK Csíkszereda vs Unirea Slobozia
+  RSL [90/180] Argeș Pitești vs U. Craiova
+  RSL [91/180] Argeș Pitești vs U. Craiova
+  RSL [92/180] UTA vs U. Cluj
+  RSL [93/180] FCSB vs Petrolul Ploiești
+  RSL [94/180] Oțelul Galați vs Farul Constanța
+  RSL [95/180] CFR Cluj vs Rapid București
+  RSL [96/180] Metaloglobus vs Hermannstadt
+  RSL [97/180] FC Botoșani vs Dinamo București
+  RSL [98/180] Rapid București vs FK Csíkszereda
+  RSL [99/180] Argeș Pitești vs CFR Cluj
+  RSL [100/180] Dinamo București vs Oțelul Galați
+  RSL [101/180] Hermannstadt vs UTA
+  RSL [102/180] Unirea Slobozia vs FC Botoșani
+  RSL [103/180] Farul Constanța vs FCSB
+  RSL [104/180] Petrolul Ploiești vs Metaloglobus
+  RSL [105/180] U. Cluj vs U. Craiova
+  RSL [106/180] Oțelul Galați vs Unirea Slobozia
+  RSL [107/180] FK Csíkszereda vs Argeș Pitești
+  RSL [108/180] FCSB vs Dinamo București
+  RSL [109/180] U. Cluj vs Hermannstadt
+  RSL [110/180] Metaloglobus vs Farul Constanța
+  RSL [111/180] U. Craiova vs CFR Cluj
+  RSL [112/180] UTA vs Petrolul Ploiești
+  RSL [113/180] FC Botoșani vs Rapid București
+  RSL [114/180] CFR Cluj vs FK Csíkszereda
+  RSL [115/180] Argeș Pitești vs FC Botoșani
+  RSL [116/180] Rapid București vs Oțelul Galați
+  RSL [117/180] Petrolul Ploiești vs U. Cluj
+  RSL [118/180] Dinamo București vs Metaloglobus
+  RSL [119/180] Hermannstadt vs U. Craiova
+  RSL [120/180] Farul Constanța vs UTA
+  RSL [121/180] FC Botoșani vs CFR Cluj
+  RSL [122/180] Metaloglobus vs Unirea Slobozia
+  RSL [123/180] Oțelul Galați vs Argeș Pitești
