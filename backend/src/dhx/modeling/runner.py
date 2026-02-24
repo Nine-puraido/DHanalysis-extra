@@ -431,7 +431,7 @@ def predict_upcoming(
         console.print("[cyan]Refreshing predictions summary view...[/cyan]")
         try:
             client = get_client()
-            client.schema("dhx").rpc("refresh_predictions_summary").execute()
+            client.schema("dhx").rpc("refresh_predictions_summary", {}).execute()
             console.print("[green]  Matview refreshed.[/green]")
         except Exception as e:
             console.print(f"[yellow]  Matview refresh failed ({e}), try manually.[/yellow]")

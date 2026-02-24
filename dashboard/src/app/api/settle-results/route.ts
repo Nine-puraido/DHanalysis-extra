@@ -137,7 +137,7 @@ export async function POST(request: Request) {
             pythonBin,
             [
               "-c",
-              "from dhx.db import get_client; get_client().schema('dhx').rpc('refresh_predictions_summary').execute(); print('OK')",
+              "from dhx.db import get_client; get_client().schema('dhx').rpc('refresh_predictions_summary', {}).execute(); print('OK')",
             ],
             { cwd: backendDir, timeout: 60_000 },
           );
