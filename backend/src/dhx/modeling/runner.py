@@ -426,6 +426,16 @@ def predict_upcoming(
     console.print()
     console.print(results_table)
 
+    # Refresh materialized view so dashboard sees new predictions
+    if n_inserted > 0:
+        console.print("[cyan]Refreshing predictions summary view...[/cyan]")
+        try:
+            client = get_client()
+            client.schema("dhx").rpc("refresh_predictions_summary").execute()
+            console.print("[green]  Matview refreshed.[/green]")
+        except Exception as e:
+            console.print(f"[yellow]  Matview refresh failed ({e}), try manually.[/yellow]")
+
 
 def _generate_and_insert_predictions(
     df: pl.DataFrame, fixture_ids: list[int]

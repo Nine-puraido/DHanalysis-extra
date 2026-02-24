@@ -421,7 +421,8 @@ export function getVerdict(
   }
 
   // T2: Filter ≥2 + signal exists + agree (blue) — skip bleeding leagues
-  if (hasFilt && hasPick && agree && !T2_EXCLUDE.has(card.leagueKey) && !dogTrap) {
+  // Dog trap waived when all signals unanimous
+  if (hasFilt && hasPick && agree && !T2_EXCLUDE.has(card.leagueKey) && (!dogTrap || unanimous)) {
     const team = card.pick!.side === "home" ? card.homeTeam : card.awayTeam;
     return {
       label: `BET ${team}`,
@@ -430,9 +431,9 @@ export function getVerdict(
     };
   }
 
-  // T3: 4 signals active, no filter requirement (yellow)
+  // T3: All active signals unanimous (3/3 or 4/4), no filter requirement (yellow)
   // Dog-trap bets only allowed if line gap >= 0.5
-  if (all4 && (!dogTrap || lineGap >= 0.5)) {
+  if (unanimous && (!dogTrap || lineGap >= 0.5)) {
     const team = card.pick!.side === "home" ? card.homeTeam : card.awayTeam;
     return {
       label: `BET ${team}`,
