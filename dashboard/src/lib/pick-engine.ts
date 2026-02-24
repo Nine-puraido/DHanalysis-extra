@@ -16,6 +16,12 @@ const ALL_LEAGUES = [
   "L2","LL2","MLS","POL","QSL","RSL","SB","SPL_SA","SRBL","TL1","UAE","UPL",
 ];
 
+/** Leagues removed from the entire system (bad data / unprofitable) */
+export const FULL_EXCLUDE = new Set<string>(["ARG", "CFL", "SB"]);
+
+/** IPL: only allowed in T1 (75% hit), excluded from all other picks */
+export const IPL_T1_ONLY = new Set<string>(["IPL"]);
+
 /** Leagues where model filter is not applied (weak signal) */
 export const WEAK_LEAGUES = new Set<string>([]);
 
@@ -248,6 +254,7 @@ export function computeCardPick(
   leaguePredictions?: PredictionRow[],
   leagueKey?: string,
 ): { side: "home" | "away"; signals: number; total: number; edge: number } | null {
+  if (leagueKey && FULL_EXCLUDE.has(leagueKey)) return null;
   if (p.ah_fair_line == null || p.ah_closing_line == null) return null;
   if (p.ah_fair_line === p.ah_closing_line) return null;
 
@@ -311,6 +318,7 @@ export function computeModelFilterPick(
   p: PredictionRow,
   leagueKey: string,
 ): ModelFilterPick | null {
+  if (FULL_EXCLUDE.has(leagueKey)) return null;
   if (p.ah_fair_line == null || p.ah_closing_line == null) return null;
   if (p.ah_fair_line === p.ah_closing_line) return null;
 
@@ -342,6 +350,8 @@ export function computeTotalsPick(
   p: PredictionRow,
   leagueKey: string,
 ): TotalsPick | null {
+  if (FULL_EXCLUDE.has(leagueKey)) return null;
+  if (IPL_T1_ONLY.has(leagueKey)) return null;
   if (TOTALS_EXCLUDE.has(leagueKey)) return null;
   if (p.prob_over25 == null || p.closing_over25 == null) return null;
 
@@ -364,6 +374,8 @@ export function computeAgreeOverPick(
   p: PredictionRow,
   leagueKey?: string,
 ): AgreeOverPick | null {
+  if (leagueKey && FULL_EXCLUDE.has(leagueKey)) return null;
+  if (leagueKey && IPL_T1_ONLY.has(leagueKey)) return null;
   if (leagueKey && AGREE_O_EXCLUDE.has(leagueKey)) return null;
   if (p.prob_over25 == null || p.closing_over25 == null) return null;
 
@@ -382,6 +394,7 @@ export function computeAgreeOverPick(
 export function getVerdict(
   card: MatchCard,
 ): { label: string; cls: string; tier: number } | null {
+  if (FULL_EXCLUDE.has(card.leagueKey)) return null;
   const hasPick = card.pick !== null;
   const filtCount = card.modelFilter?.count ?? 0;
   const hasFilt = filtCount >= 2;
@@ -400,8 +413,10 @@ export function getVerdict(
     ? Math.abs((card.prediction.ah_fair_line ?? 0) - (card.prediction.ah_closing_line ?? 0))
     : 0;
 
-  // T0: 4 signals + filter ≥2 + unanimous + agree (gold)
-  if (all4 && unanimous && hasFilt && agree && !dogTrap) {
+  const isIplOnly = IPL_T1_ONLY.has(card.leagueKey);
+
+  // T0: 4 signals + filter ≥2 + unanimous + agree (gold) — IPL excluded (T1 only)
+  if (all4 && unanimous && hasFilt && agree && !dogTrap && !isIplOnly) {
     const team = card.pick!.side === "home" ? card.homeTeam : card.awayTeam;
     return {
       label: `BET ${team}`,
@@ -420,9 +435,9 @@ export function getVerdict(
     };
   }
 
-  // T2: Filter ≥2 + signal exists + agree (blue) — skip bleeding leagues
+  // T2: Filter ≥2 + signal exists + agree (blue) — skip bleeding leagues, IPL excluded
   // Dog trap waived when all signals unanimous
-  if (hasFilt && hasPick && agree && !T2_EXCLUDE.has(card.leagueKey) && (!dogTrap || unanimous)) {
+  if (hasFilt && hasPick && agree && !T2_EXCLUDE.has(card.leagueKey) && (!dogTrap || unanimous) && !isIplOnly) {
     const team = card.pick!.side === "home" ? card.homeTeam : card.awayTeam;
     return {
       label: `BET ${team}`,
@@ -431,9 +446,9 @@ export function getVerdict(
     };
   }
 
-  // T3: All active signals unanimous (3/3 or 4/4), no filter requirement (yellow)
+  // T3: All active signals unanimous (3/3 or 4/4), no filter requirement (yellow) — IPL excluded
   // Dog-trap bets only allowed if line gap >= 0.5
-  if (unanimous && (!dogTrap || lineGap >= 0.5)) {
+  if (unanimous && (!dogTrap || lineGap >= 0.5) && !isIplOnly) {
     const team = card.pick!.side === "home" ? card.homeTeam : card.awayTeam;
     return {
       label: `BET ${team}`,
@@ -478,6 +493,7 @@ export function buildMatchCards(
   const cards: MatchCard[] = [];
 
   for (const f of fixtures) {
+    if (FULL_EXCLUDE.has(f.league_key)) continue;
     const pred = predictionMap.get(f.id) || null;
     const leaguePreds = byLeague.get(f.league_key);
     cards.push({
@@ -499,6 +515,7 @@ export function buildMatchCards(
 
   // Add predictions without a matching fixture
   for (const p of predictions) {
+    if (FULL_EXCLUDE.has(p.league_key)) continue;
     if (!fixtures.some((f) => f.id === p.fixture_id)) {
       const leaguePreds = byLeague.get(p.league_key);
       cards.push({

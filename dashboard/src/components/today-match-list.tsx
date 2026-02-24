@@ -18,6 +18,8 @@ import {
   S1_MODEL_LEAGUES,
   S1_MARKET_LEAGUES,
   T2_EXCLUDE,
+  FULL_EXCLUDE,
+  IPL_T1_ONLY,
   computeTeamAccuracy,
   computePriceChainSignal,
   computeCardPick,
@@ -82,6 +84,9 @@ function computeCategoryStats(allPredictions: PredictionRow[]) {
   const teamAcc = new Map<string, { results: boolean[] }>();
 
   for (const r of finished) {
+    // Skip fully excluded leagues
+    if (FULL_EXCLUDE.has(r.league_key)) continue;
+
     // --- AH tiers ---
     if (r.ah_fair_line != null && r.ah_closing_line != null && r.ah_fair_line !== r.ah_closing_line) {
       const goalDiff = r.home_score! - r.away_score!;
@@ -155,8 +160,10 @@ function computeCategoryStats(allPredictions: PredictionRow[]) {
         const hasGap = filtFilters.includes("Gap+Top6");
         const dogTrap = isDog && !hasGap;
 
-        // T0: 4 signals + filter ≥2 + unanimous + agree (gold) — no dog trap
-        if (has3sig && all4 && unanimous && hasFilt && sigAgree && !dogTrap) {
+        const isIplOnly = IPL_T1_ONLY.has(r.league_key);
+
+        // T0: 4 signals + filter ≥2 + unanimous + agree (gold) — no dog trap, IPL excluded
+        if (has3sig && all4 && unanimous && hasFilt && sigAgree && !dogTrap && !isIplOnly) {
           const betHome = sigSide === "home";
           const win = betHome ? adjusted > 0 : adjusted < 0;
           addTo(stats.t0, r.league_key, win);
@@ -167,15 +174,15 @@ function computeCategoryStats(allPredictions: PredictionRow[]) {
           const win = betHome ? adjusted > 0 : adjusted < 0;
           addTo(stats.t1, r.league_key, win);
         }
-        // T2: filter ≥2 + signal exists + agree (blue) — skip bleeding leagues, no dog trap
-        else if (hasFilt && has3sig && sigAgree && !T2_EXCLUDE.has(r.league_key) && !dogTrap) {
+        // T2: filter ≥2 + signal exists + agree (blue) — skip bleeding leagues, no dog trap, IPL excluded
+        else if (hasFilt && has3sig && sigAgree && !T2_EXCLUDE.has(r.league_key) && !dogTrap && !isIplOnly) {
           const betHome = sigSide === "home";
           const win = betHome ? adjusted > 0 : adjusted < 0;
           addTo(stats.t2, r.league_key, win);
         }
-        // T3: 4 signals active, no filter required (yellow)
+        // T3: 4 signals active, no filter required (yellow) — IPL excluded
         // Dog-trap bets only allowed if line gap >= 0.5
-        else if (has3sig && all4 && (!dogTrap || Math.abs(r.ah_fair_line! - r.ah_closing_line!) >= 0.5)) {
+        else if (has3sig && all4 && (!dogTrap || Math.abs(r.ah_fair_line! - r.ah_closing_line!) >= 0.5) && !isIplOnly) {
           const betHome = sigSide === "home";
           const win = betHome ? adjusted > 0 : adjusted < 0;
           addTo(stats.t3, r.league_key, win);
@@ -191,8 +198,8 @@ function computeCategoryStats(allPredictions: PredictionRow[]) {
       }
     }
 
-    // --- Totals ---
-    if (r.prob_over25 != null && r.closing_over25 != null) {
+    // --- Totals (skip IPL-T1-only leagues) ---
+    if (r.prob_over25 != null && r.closing_over25 != null && !IPL_T1_ONLY.has(r.league_key)) {
       const modelProb = r.prob_over25;
       const marketProb = 1 / r.closing_over25;
       const edge = Math.abs(modelProb - marketProb);
@@ -293,6 +300,7 @@ export function TodayMatchList({ predictions, allPredictions, fixtures, leagues,
   const cards: MatchCard[] = [];
 
   for (const f of fixtures) {
+    if (FULL_EXCLUDE.has(f.league_key)) continue;
     const pred = predictionMap.get(f.id) || null;
     const leaguePreds = byLeagueMap.get(f.league_key);
     cards.push({
@@ -314,6 +322,7 @@ export function TodayMatchList({ predictions, allPredictions, fixtures, leagues,
 
   // Add any predictions without a matching fixture
   for (const p of predictions) {
+    if (FULL_EXCLUDE.has(p.league_key)) continue;
     if (!fixtures.some((f) => f.id === p.fixture_id)) {
       const leaguePreds = byLeagueMap.get(p.league_key);
       cards.push({
