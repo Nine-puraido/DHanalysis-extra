@@ -130,6 +130,24 @@ export async function POST(request: Request) {
           message: `Settled: ${sessionCount} session bets, ${picksCount} daily picks`,
         });
 
+        // Step 3: Refresh materialized view so the live tab sees updated scores
+        send({ step: "matview", status: "running", message: "Refreshing predictions view..." });
+        try {
+          await execFileAsync(
+            pythonBin,
+            [
+              "-c",
+              "from dhx.db import get_client; get_client().schema('dhx').rpc('refresh_predictions_summary').execute(); print('OK')",
+            ],
+            { cwd: backendDir, timeout: 60_000 },
+          );
+          send({ step: "matview", status: "done", message: "Predictions view refreshed" });
+        } catch (mvErr) {
+          // Non-fatal — settlement still succeeded
+          const mvMsg = mvErr instanceof Error ? mvErr.message : "Unknown error";
+          send({ step: "matview", status: "warning", message: `Matview refresh failed: ${mvMsg}` });
+        }
+
         send({ step: "complete", status: "done", success: true });
       } catch (err: unknown) {
         const message = err instanceof Error ? err.message : "Unknown error";
